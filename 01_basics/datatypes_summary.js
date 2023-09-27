@@ -35,3 +35,30 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World");
 }
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+// STACK AND HEAP MEMORY
+
+// Stack(Primitive) , Heap(Non-Primitive)
+
+// Primitive - Here orginal value is not change copy of original value is used and store in stack memory(call by value)
+let myYoutubename = "HiteshChoudarydotcom";
+let anothername = myYoutubename  
+anothername = "ChaiaurCode"
+
+console.log(myYoutubename)
+console.log(anothername);
+
+
+// Non-Primitive - Here change will be done in original value (call by reference) and heap memory is used
+let  userOne = {
+    email: "user@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "Htiesh@google"
+
+console.log(userOne.email)
+console.log(userTwo.email)
